@@ -41,11 +41,11 @@ public class SpaceInvaders {
         //Inicia o jogo
         Space.init();
 
-        for (int i = 0; i < 150; i++) {
+        for (int i = 0; i < 55; i++) {
             //Move os bonecos
             for (int j = 0; j < 12; j++) {
                 meusmonstros[j].setY(meusmonstros[j].getY() + 1);
-                 if(meusmonstros[j].getY()==67){
+                 if(meusmonstros[j].getY()==70){
                     Space.gameOver();
                   
                 }
@@ -67,7 +67,7 @@ public class SpaceInvaders {
                 }
                 System.out.println(Space.getPlatX());
                 if (Space.apertouEsquerda()) {
-                    if (Space.getPlatX() > 1) {
+                    if (Space.getPlatX  () > 1) {
                         Space.setPlatX(Space.getPlatX() - 1);
                     }
                 }
